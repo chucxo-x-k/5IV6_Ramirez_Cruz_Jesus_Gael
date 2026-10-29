@@ -1,0 +1,129 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: System-ui, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #800000;
+}
+
+header a {
+    color: #ffffff;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+footer {
+    color: #aaaaaa;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    }
+
+    .tarjeta {
+        padding: 1rem;
+        border: 1px solid #444444;
+        border-radius: 0.5rem;
+        background-color: #2a2a2a;
+        border-left: 4px solid #800000;
+    }
+
+.tarjeta h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.tarjeta a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    color: #ff6666;
+    text-decoration: underline;
+}
+
+.formulario_registro {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border: 1px solid #444444;
+    border-radius: 5px;
+}
+
+.formulario_registro h1 {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario_registro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+
+.formulario_registro button {
+    width: 100%;
+    padding: 10px;
+    background-color: #800000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.formulario_registro button:hover {
+    background-color: #a30000;
+}
+
+.error {
+    color: #ff6666;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    min-height: 15px;
+}
+
+.formulario_registro input.invalido {
+    border: 2px solid #ff6666;
+    background-color: #4a1a1a;
+}
+
+.mensaje-exito {
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
